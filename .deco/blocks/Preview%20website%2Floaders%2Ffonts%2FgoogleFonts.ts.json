@@ -1,0 +1,13 @@
+{
+  "__resolveType": "website/loaders/fonts/googleFonts.ts",
+  "fonts": [
+    {
+      "variations": [
+        {
+          "weight": "100"
+        }
+      ],
+      "family": "Montserrat"
+    }
+  ]
+}

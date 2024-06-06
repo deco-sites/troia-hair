@@ -1,1 +1,13 @@
-{"__resolveType":"site/sections/Header.tsx"}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {}
+    ],
+    "buttons": []
+  },
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/160dd22a-c4b6-4826-86af-9a96537715e0",
+    "alt": "troia hair logo"
+  }
+}
