@@ -1,1 +1,78 @@
-{"__resolveType":"site/sections/Footer.tsx"}
+{
+  "__resolveType": "site/sections/Footer.tsx",
+  "links": [
+    {
+      "items": [
+        {
+          "label": "Quem somos",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        },
+        {
+          "label": "Privacidade e segurança",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        },
+        {
+          "label": "Termos de uso",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        },
+        {
+          "label": "Trabalhe conosco",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        }
+      ],
+      "title": "Sobre"
+    },
+    {
+      "items": [
+        {
+          "label": "Central de atendimento",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        },
+        {
+          "label": "Fale conosco pelo Whatsapp",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        },
+        {
+          "label": "Troca e devolução",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        }
+      ],
+      "title": "Atendimento"
+    },
+    {
+      "items": [
+        {
+          "label": "Login e cadastro",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        },
+        {
+          "label": "Meus pedidos",
+          "href": "https://sites-troia-hair--staging.decocdn.com/"
+        }
+      ],
+      "title": "Minha conta"
+    }
+  ],
+  "bottomLinks": [],
+  "social": [
+    {
+      "network": "Facebook",
+      "href": "facebook"
+    },
+    {
+      "network": "Instagram",
+      "href": "insta"
+    },
+    {
+      "network": "Linkedin",
+      "href": "linkedn"
+    },
+    {
+      "network": "X - Twitter",
+      "href": "x"
+    }
+  ],
+  "subscribe": {
+    "instructions": "<p><span>Ao se inscrever, você está aceitando nossa Política de Privacidade.</span></p>"
+  }
+}
