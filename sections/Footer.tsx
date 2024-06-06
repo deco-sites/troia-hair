@@ -19,7 +19,13 @@ export interface Subscribe {
 }
 
 export interface Social {
-  network: "Facebook" | "Instagram" | "Linkedin" | "X - Twitter" | "Youtube";
+  network:
+    | "Facebook"
+    | "Instagram"
+    | "Linkedin"
+    | "X - Twitter"
+    | "Youtube"
+    | "Tiktok";
   href: string;
 }
 
@@ -28,8 +34,8 @@ export interface Props {
     src?: ImageWidget;
     alt?: string;
   };
-  title?: string,
-  subtitle?: string,
+  title?: string;
+  subtitle?: string;
   links?: Column[];
   subscribe?: Subscribe;
   madeWith?: {
@@ -48,7 +54,7 @@ export default function Footer({
     alt: "Logo",
   },
   title = "Assine nossa newsletter",
-  subtitle= "Fique por dentro de nossas novidades e descontos",
+  subtitle = "Fique por dentro de nossas novidades e descontos",
   links = [
     {
       title: "Column One",
@@ -105,23 +111,18 @@ export default function Footer({
     { network: "X - Twitter", href: "" },
     { network: "Linkedin", href: "" },
     { network: "Youtube", href: "" },
+    { network: "Tiktok", href: "" },
   ],
 }: Props) {
   return (
-    <div class="lg:container mx-auto md:max-w-6xl px-4 pt-16 text-sm">
-      <div class="flex flex-col gap-20">
-        <div class="flex flex-col gap-6 justify-between lg:flex-row">
+    <div class="lg:max-w-none bg-neutral mx-auto md:max-w-6xl px-4 pt-16 text-sm flex justify-center">
+      <div class="w-[1153px] flex flex-col gap-20">
+        <div class="flex flex-col gap-6 justify-between lg:flex-row text-secondary-content">
           <div>
-            <h3>{title}</h3>
-            <p>{subtitle}</p>
-            <Image
-              src={logo.src || ""}
-              width={100}
-              height={28}
-              alt={logo.alt}
-            />
+            <h3 class="font-poppins text-2xl font-bold">{title}</h3>
+            <p class="font-poppins text-xs font-bold pt-1">{subtitle}</p>
           </div>
-          <div class="flex gap-9">
+          <div class="flex gap-9 text-secondary-content">
             {links?.map((link) => (
               <div>
                 <h4 class="font-semibold mb-4">{link.title}</h4>
