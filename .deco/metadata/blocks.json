@@ -100,5 +100,9 @@
   "/.deco/blocks/Footer.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Footer.tsx"
+  },
+  "/.deco/blocks/Preview%20website%2Factions%2Fsecrets%2Fencrypt.ts.json": {
+    "blockType": "actions",
+    "__resolveType": "website/actions/secrets/encrypt.ts"
   }
 }

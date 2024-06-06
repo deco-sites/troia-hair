@@ -70,6 +70,10 @@
     {
       "network": "X - Twitter",
       "href": "x"
+    },
+    {
+      "network": "Tiktok",
+      "href": "tiktok"
     }
   ],
   "subscribe": {
