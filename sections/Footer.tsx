@@ -28,6 +28,8 @@ export interface Props {
     src?: ImageWidget;
     alt?: string;
   };
+  title?: string,
+  subtitle?: string,
   links?: Column[];
   subscribe?: Subscribe;
   madeWith?: {
@@ -42,10 +44,11 @@ export interface Props {
 
 export default function Footer({
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/160dd22a-c4b6-4826-86af-9a96537715e0",
     alt: "Logo",
   },
+  title = "Assine nossa newsletter",
+  subtitle= "Fique por dentro de nossas novidades e descontos",
   links = [
     {
       title: "Column One",
@@ -87,8 +90,7 @@ export default function Footer({
   },
   madeWith = {
     label: "Made with",
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/cc202be0-af57-4b32-b9c9-d1d7dc97bf85",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/cc202be0-af57-4b32-b9c9-d1d7dc97bf85",
     href: "https://deco.cx",
   },
   copyright = "© 2024 deco.cx. All rights reserved.",
@@ -110,6 +112,8 @@ export default function Footer({
       <div class="flex flex-col gap-20">
         <div class="flex flex-col gap-6 justify-between lg:flex-row">
           <div>
+            <h3>{title}</h3>
+            <p>{subtitle}</p>
             <Image
               src={logo.src || ""}
               width={100}
@@ -153,8 +157,7 @@ export default function Footer({
               <p
                 class="text-xs"
                 dangerouslySetInnerHTML={{ __html: subscribe.instructions }}
-              >
-              </p>
+              ></p>
             </form>
           </div>
         </div>

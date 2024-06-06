@@ -258,13 +258,8 @@ function Section({
 
   const variables = [
     ...toVariables(theme),
-    [
-      "--font-family",
-      font?.family ||
-      "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
-    ],
-  ]
-    .map(([name, value]) => ({ name, value }));
+    ["--font-family", font?.family || "Montserrat, sans-serif"],
+  ].map(([name, value]) => ({ name, value }));
 
   return (
     <SiteTheme
@@ -279,15 +274,13 @@ export function Preview(props: Props) {
   const adminColorMode = props.mode === "dark" ? "dark" : "light";
   return (
     <>
-      {
-        /* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
-        * This is a temporary solution until the admin's color schema is accessible.
-        * TODO(@carol): Change this temporary solution / discuss with designers a doable approach
-       */
-      }
+      {/* This stylesheet is used to simulate the colors from the admin's color schema (admin's light or dark mode), which are not accessible in the site's color schema.
+       * This is a temporary solution until the admin's color schema is accessible.
+       * TODO(@carol): Change this temporary solution / discuss with designers a doable approach
+       */}
       <style>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;700&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
           :root {
             --admin-color-dark-bg: #0d1717;
@@ -370,9 +363,7 @@ export function Preview(props: Props) {
       <div
         className={`flex flex-col gap-2 p-1 text-base w-full ${adminColorMode}`}
       >
-        <div className="admin-font-family">
-          Components and styles
-        </div>
+        <div className="admin-font-family">Components and styles</div>
         <div className="flex flex-col w-full gap-2">
           <PreviewContainer
             title="Text colors"
@@ -405,9 +396,7 @@ export function Preview(props: Props) {
         </div>
       </div>
       {props.font?.family && (
-        <div className="text-center py-2">
-          Font: {props.font.family}
-        </div>
+        <div className="text-center py-2">Font: {props.font.family}</div>
       )}
     </>
   );
