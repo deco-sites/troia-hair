@@ -68,12 +68,15 @@
       "href": "linkedn"
     },
     {
+      "network": "Tiktok",
+      "href": "tiktok"
+    },
+    {
       "network": "X - Twitter",
       "href": "x"
     },
     {
-      "network": "Tiktok",
-      "href": "tiktok"
+      "network": "Facebook"
     }
   ],
   "subscribe": {
