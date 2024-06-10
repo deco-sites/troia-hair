@@ -104,5 +104,9 @@
   "/.deco/blocks/Preview%20website%2Factions%2Fsecrets%2Fencrypt.ts.json": {
     "blockType": "actions",
     "__resolveType": "website/actions/secrets/encrypt.ts"
+  },
+  "/.deco/blocks/Preview%20blog%2Fsections%2FTemplate.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "blog/sections/Template.tsx"
   }
 }
