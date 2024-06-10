@@ -36,6 +36,9 @@
       ]
     },
     {
+      "__resolveType": "Preview /sections/Categories.tsx"
+    },
+    {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
       "placement": "right"
     },

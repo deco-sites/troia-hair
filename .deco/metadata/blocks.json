@@ -108,5 +108,9 @@
   "/.deco/blocks/Preview%20blog%2Fsections%2FTemplate.tsx.json": {
     "blockType": "sections",
     "__resolveType": "blog/sections/Template.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FCategories.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Categories.tsx"
   }
 }
