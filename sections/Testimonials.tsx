@@ -200,10 +200,10 @@ function Carousel(props: Props) {
     <div class="w-screen border-t-2 border-primary">
       <div
         id={id}
-        class="min-h-min flex flex-col  lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28 b"
+        class="min-h-min flex flex-col  lg:container md:max-w-6xl lg:mx-auto mx-4 py-4 lg:py-12 b"
       >
-        <h2 class="text-2xl text-primary text-bold">{title}</h2>
-        <p>{subtitle}</p>
+        <h2 class="text-2xl text-primary font-bold pb-5">{title}</h2>
+        <p class="text-base text-primary">{subtitle}</p>
         <Slider
           class="carousel carousel-center w-full col-span-full row-span-full gap-6"
           rootId={id}
