@@ -107,19 +107,25 @@ function SliderItem({ slide, id }: { slide: Testimonial; id: string }) {
 
   return (
     <div id={id} class="relative overflow-y-hidden w-full min-h-[292px]">
-      <div class="flex flex-col justify-center gap-16 p-8 border border-base-content rounded-2xl h-[409px] w-[327px]">
-        <p class="text-lg">{content?.description}</p>
-        <div class="flex items-center gap-5">
+      <div class="flex flex-col justify-center gap-16 p-8 h-[409px] w-[327px]">
+        <div class="flex flex-col items-center gap-5">
           <Image
-            class="object-cover w-14 h-14 rounded-full"
+            class="object-cover w-[186] h-[186] rounded-full bg-primary"
             alt={content?.alt}
             src={content?.avatar || ""}
             width={186}
             height={186}
           />
           <div class="flex flex-col">
-            <p class="font-semibold text-base">{content?.name}</p>
-            <p class="text-base">{content?.position}</p>
+            <p class="font-semibold  w-[327px] text-primary text-center text-base">
+              {content?.name}
+            </p>
+            <p class="text-primary text-center text-[10px]">
+              {content?.position}
+            </p>
+            <p class="text-xs w-[327px] text-primary text-center pt-6">
+              {content?.description}
+            </p>
           </div>
         </div>
       </div>
@@ -191,29 +197,34 @@ function Carousel(props: Props) {
   const { title, subtitle, slides, interval } = { ...DEFAULT_PROPS, ...props };
 
   return (
-    <div
-      id={id}
-      class="min-h-min flex flex-col lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28"
-    >
-      <h2 class="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">{title}</h2>
-      <p>{subtitle}</p>
-      <Slider
-        class="carousel carousel-center w-full col-span-full row-span-full gap-6"
-        rootId={id}
-        interval={interval && interval * 1e3}
-        infinite
+    <div class="w-screen border-t-2 border-primary">
+      <div
+        id={id}
+        class="min-h-min flex flex-col  lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28 b"
       >
-        {slides?.map((slide, index) => (
-          <Slider.Item index={index} class="carousel-item max-w-[600px] w-full">
-            <SliderItem slide={slide} id={`${id}::${index}`} />
-          </Slider.Item>
-        ))}
-      </Slider>
+        <h2 class="text-2xl text-primary text-bold">{title}</h2>
+        <p>{subtitle}</p>
+        <Slider
+          class="carousel carousel-center w-full col-span-full row-span-full gap-6"
+          rootId={id}
+          interval={interval && interval * 1e3}
+          infinite
+        >
+          {slides?.map((slide, index) => (
+            <Slider.Item
+              index={index}
+              class="carousel-item max-w-[600px] w-full"
+            >
+              <SliderItem slide={slide} id={`${id}::${index}`} />
+            </Slider.Item>
+          ))}
+        </Slider>
 
-      {/* <div class="flex justify-between pt-8 lg:px-16">
+        {/* <div class="flex justify-between pt-8 lg:px-16">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
         {props.arrows && <Buttons />}
       </div> */}
+      </div>
     </div>
   );
 }
