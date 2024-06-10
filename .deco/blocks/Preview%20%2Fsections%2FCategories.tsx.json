@@ -1,3 +1,33 @@
 {
-  "__resolveType": "site/sections/Categories.tsx"
+  "__resolveType": "site/sections/Categories.tsx",
+  "categorie": [
+    {
+      "title": "Linha Masculina",
+      "imgHref": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/7c0261de-edc3-48ee-8783-c031531ba9e6"
+    },
+    {
+      "title": "Géis & Ceras",
+      "imgHref": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/7c0261de-edc3-48ee-8783-c031531ba9e6"
+    },
+    {
+      "imgHref": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/7c0261de-edc3-48ee-8783-c031531ba9e6",
+      "title": "Progressivas & Botox"
+    },
+    {
+      "title": "Tratamentos",
+      "imgHref": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/7c0261de-edc3-48ee-8783-c031531ba9e6"
+    },
+    {
+      "title": "Hidratação",
+      "imgHref": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/7c0261de-edc3-48ee-8783-c031531ba9e6"
+    },
+    {
+      "title": "Poderosa",
+      "imgHref": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/7c0261de-edc3-48ee-8783-c031531ba9e6"
+    },
+    {
+      "title": "Troia Colors",
+      "imgHref": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/7c0261de-edc3-48ee-8783-c031531ba9e6"
+    }
+  ]
 }
