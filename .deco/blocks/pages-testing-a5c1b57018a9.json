@@ -11,7 +11,29 @@
       "cta": [],
       "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/c922b283-8cdf-436b-9382-3ec15abb11e1",
-      "placement": "left"
+      "placement": "left",
+      "informationBar": [
+        {
+          "title": "Frete Grátis",
+          "subtitle": "Em compras acima de R$200,00",
+          "item": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/2c8f7acc-f369-48ca-a380-eaa28e0c13bd"
+        },
+        {
+          "item": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/2c8f7acc-f369-48ca-a380-eaa28e0c13bd",
+          "title": "Frete GRÁTIS sem valor mínimo",
+          "subtitle": "Para São Paulo capital e regiões metropolitanas"
+        },
+        {
+          "item": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/2c8f7acc-f369-48ca-a380-eaa28e0c13bd",
+          "title": "Pague com cartão",
+          "subtitle": "em ate 12x sem juros"
+        },
+        {
+          "item": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/2c8f7acc-f369-48ca-a380-eaa28e0c13bd",
+          "title": "Segurança",
+          "subtitle": "Loja oficial"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/ImageWithParagraph.tsx",
