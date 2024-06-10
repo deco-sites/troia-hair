@@ -47,7 +47,7 @@ export default function HeroFlats({
                 loading="lazy"
               />
               <h5>{item.title}</h5>
-              <p>{ item.subtitle}</p>
+              <p>{item.subtitle}</p>
             </div>
           ))}
         </div>
