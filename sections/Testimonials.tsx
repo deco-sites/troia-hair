@@ -110,7 +110,7 @@ function SliderItem({ slide, id }: { slide: Testimonial; id: string }) {
       <div class="flex flex-col justify-center gap-16 p-8 h-[409px] w-[327px]">
         <div class="flex flex-col items-center gap-5">
           <Image
-            class="object-cover w-[186] h-[186] rounded-full bg-primary"
+            class="object-cover rounded-full bg-primary"
             alt={content?.alt}
             src={content?.avatar || ""}
             width={186}
