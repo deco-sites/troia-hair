@@ -205,7 +205,7 @@ function Carousel(props: Props) {
         <h2 class="text-2xl text-primary font-bold pb-5">{title}</h2>
         <p class="text-base text-primary">{subtitle}</p>
         <Slider
-          class="carousel carousel-center w-full col-span-full row-span-full gap-6"
+          class="carousel carousel-center w-full col-span-full row-span-full gap-20 pt-10"
           rootId={id}
           interval={interval && interval * 1e3}
           infinite
@@ -213,7 +213,7 @@ function Carousel(props: Props) {
           {slides?.map((slide, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item max-w-[600px] w-full"
+              class="carousel-item"
             >
               <SliderItem slide={slide} id={`${id}::${index}`} />
             </Slider.Item>
