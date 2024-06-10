@@ -35,15 +35,15 @@
           },
           {
             "weight": "100"
-          }
-        ],
-        "family": "Montserrat"
-      },
-      {
-        "variations": [
+          },
           {
-            "weight": "100",
-            "italic": false
+            "weight": "400"
+          },
+          {
+            "weight": "500"
+          },
+          {
+            "weight": "700"
           }
         ],
         "family": "Montserrat"
@@ -52,6 +52,12 @@
         "variations": [
           {
             "weight": "100"
+          },
+          {
+            "weight": "400"
+          },
+          {
+            "weight": "500"
           }
         ],
         "family": "Poppins"

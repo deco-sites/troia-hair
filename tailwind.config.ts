@@ -16,6 +16,11 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
       },
+      fontSize: {
+        'custom-s8': '8px',  
+        'custom-s9': '9px',  
+        'custom-s10': '10px',  
+      }
     },
   },
 };

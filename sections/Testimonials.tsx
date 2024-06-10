@@ -9,18 +9,19 @@ import { useId } from "../sdk/useId.ts";
  */
 export interface Testimonial {
   content?: {
-    description?: string;
-    avatar?: ImageWidget;
+    description: string;
+    avatar: ImageWidget;
     /** @description Image's alt text */
-    alt?: string;
-    name?: string;
-    position?: string;
+    alt: string;
+    name: string;
+    position: string;
   };
 }
 
 export interface Props {
-  title?: string;
-  slides?: Testimonial[];
+  title: string;
+  subtitle: string;
+  slides: Testimonial[];
   /**
    * @title Show arrows
    * @description show arrows to navigate through the images
@@ -40,6 +41,8 @@ export interface Props {
 
 const DEFAULT_PROPS = {
   title: "This is where you'll put your customer testimonials",
+  subtitle:
+    "Lorem ipsum dolor sit amet consectetur. Enim est porttitor gravida dolor id. Id ipsum semper euismod euismod. Risus parturient non tempus eget libero ullamcorper ultricies tellus. Accumsan turpis tempor nunc tellus ut.",
   slides: [
     {
       content: {
@@ -99,27 +102,20 @@ const DEFAULT_PROPS = {
   ],
 };
 
-function SliderItem(
-  { slide, id }: { slide: Testimonial; id: string },
-) {
-  const {
-    content,
-  } = slide;
+function SliderItem({ slide, id }: { slide: Testimonial; id: string }) {
+  const { content } = slide;
 
   return (
-    <div
-      id={id}
-      class="relative overflow-y-hidden w-full min-h-[292px]"
-    >
-      <div class="flex flex-col justify-center gap-16 p-8 border border-base-content rounded-2xl h-full max-w-[600px]">
+    <div id={id} class="relative overflow-y-hidden w-full min-h-[292px]">
+      <div class="flex flex-col justify-center gap-16 p-8 border border-base-content rounded-2xl h-[409px] w-[327px]">
         <p class="text-lg">{content?.description}</p>
         <div class="flex items-center gap-5">
           <Image
             class="object-cover w-14 h-14 rounded-full"
             alt={content?.alt}
             src={content?.avatar || ""}
-            width={56}
-            height={56}
+            width={186}
+            height={186}
           />
           <div class="flex flex-col">
             <p class="font-semibold text-base">{content?.name}</p>
@@ -192,16 +188,15 @@ function Buttons() {
 
 function Carousel(props: Props) {
   const id = useId();
-  const { title, slides, interval } = { ...DEFAULT_PROPS, ...props };
+  const { title, subtitle, slides, interval } = { ...DEFAULT_PROPS, ...props };
 
   return (
     <div
       id={id}
       class="min-h-min flex flex-col lg:container md:max-w-6xl lg:mx-auto mx-4 py-12 lg:py-28"
     >
-      <h2 class="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">
-        {title}
-      </h2>
+      <h2 class="text-4xl leading-snug lg:w-1/2 pb-12 lg:pb-16">{title}</h2>
+      <p>{subtitle}</p>
       <Slider
         class="carousel carousel-center w-full col-span-full row-span-full gap-6"
         rootId={id}
@@ -209,22 +204,16 @@ function Carousel(props: Props) {
         infinite
       >
         {slides?.map((slide, index) => (
-          <Slider.Item
-            index={index}
-            class="carousel-item max-w-[600px] w-full"
-          >
-            <SliderItem
-              slide={slide}
-              id={`${id}::${index}`}
-            />
+          <Slider.Item index={index} class="carousel-item max-w-[600px] w-full">
+            <SliderItem slide={slide} id={`${id}::${index}`} />
           </Slider.Item>
         ))}
       </Slider>
 
-      <div class="flex justify-between pt-8 lg:px-16">
+      {/* <div class="flex justify-between pt-8 lg:px-16">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
         {props.arrows && <Buttons />}
-      </div>
+      </div> */}
     </div>
   );
 }

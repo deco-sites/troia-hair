@@ -22,7 +22,12 @@
       "__resolveType": "site/sections/BlogPosts.tsx"
     },
     {
-      "__resolveType": "site/sections/Testimonials.tsx"
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": false,
+      "dots": false,
+      "slides": [
+        {}
+      ]
     },
     {
       "__resolveType": "Preview /sections/Footer.tsx"

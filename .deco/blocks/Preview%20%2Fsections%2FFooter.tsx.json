@@ -54,29 +54,87 @@
     }
   ],
   "bottomLinks": [],
-  "social": [
-    {
+  "social": {
+    "0": {
       "network": "Facebook",
       "href": "facebook"
     },
-    {
+    "1": {
       "network": "Instagram",
       "href": "insta"
     },
-    {
+    "2": {
       "network": "Linkedin",
       "href": "linkedn"
     },
-    {
+    "3": {
+      "network": "X - Twitter",
+      "href": "x"
+    },
+    "4": {
       "network": "Tiktok",
       "href": "tiktok"
     },
+    "items": [
+      {
+        "network": "Facebook",
+        "socialImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/0bf3e624-f85b-482f-a75d-b5f062456578",
+        "href": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "network": "Instagram",
+        "href": "https://sites-troia-hair--staging.decocdn.com/",
+        "socialImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/df4ed18d-c045-447d-ab3a-2d693f93307a"
+      },
+      {
+        "network": "Linkedin",
+        "socialImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/f70057f0-ef0b-4e9a-97e8-0a40a2ad03e7",
+        "href": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "network": "Tiktok",
+        "href": "https://sites-troia-hair--staging.decocdn.com/",
+        "socialImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/352b0c26-8f4c-4f5e-8fd8-46a58fd1dead"
+      },
+      {
+        "network": "X - Twitter",
+        "href": "https://sites-troia-hair--staging.decocdn.com/",
+        "socialImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/20d22020-b785-4fe0-a3b3-cd979fe4a771"
+      }
+    ],
+    "title": "Siga-nos nas redes"
+  },
+  "subscribe": {
+    "instructions": "<p>Ao se inscrever, você está aceitando nossa Política de Privacidade.</p>"
+  },
+  "payment": {
+    "items": [
+      {
+        "href": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/e2a2bdc0-f125-4078-8911-fd5cb4a59393"
+      },
+      {
+        "href": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/400019f2-04a0-4e6c-a4af-28cd499581f9"
+      },
+      {
+        "href": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/50f1697b-fac3-40c1-bce2-385685baf38f"
+      },
+      {
+        "href": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/2cf2ed9f-6d4d-46fd-bd58-c23f436b3393"
+      }
+    ],
+    "title": "Formas de pagamento"
+  },
+  "download_app": [
     {
-      "network": "X - Twitter",
-      "href": "x"
+      "items": [],
+      "item": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/3cdffdbf-d96d-4038-96cb-bbac74d1fd95",
+      "href": "https://sites-troia-hair--staging.decocdn.com/"
+    },
+    {
+      "href": "https://sites-troia-hair--staging.decocdn.com/",
+      "item": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/8b5a8ca9-d680-4d46-b1e0-38eceb8d4435"
     }
   ],
-  "subscribe": {
-    "instructions": "<p><span>Ao se inscrever, você está aceitando nossa Política de Privacidade.</span></p>"
-  }
+  "siteName": "Tróia Hair",
+  "siteDescription": "Loren Ipsum"
 }
