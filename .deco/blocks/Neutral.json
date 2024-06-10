@@ -32,6 +32,9 @@
         "variations": [
           {
             "weight": "100"
+          },
+          {
+            "weight": "100"
           }
         ],
         "family": "Montserrat"
