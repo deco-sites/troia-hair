@@ -26,8 +26,27 @@
       "arrows": false,
       "dots": false,
       "slides": [
-        {}
-      ]
+        {
+          "content": {
+            "description": "Lorem ipsum dolor sit amet consectetur. Enim est porttitor gravida dolor id. Id ipsum semper euismod euismod. Risus parturient non tempus eget libero ullamcorper ultricies tellus. Accumsan turpis tempor nunc tellus ut.",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/42e4c10f-276c-4fd7-8fc5-5b6bec0781dd",
+            "alt": "Larissa Andrade",
+            "name": "Larissa Andrade",
+            "position": "Consultora de Vendas"
+          }
+        },
+        {
+          "content": {
+            "description": "Lorem ipsum dolor sit amet consectetur. Enim est porttitor gravida dolor id. Id ipsum semper euismod euismod. Risus parturient non tempus eget libero ullamcorper ultricies tellus. Accumsan turpis tempor nunc tellus ut.",
+            "alt": "Larissa Andrade",
+            "avatar": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/f9fc1c42-a163-46e9-acb6-18d7d5d62cd9",
+            "name": "Larissa Andrade",
+            "position": "Consultora de Vendas"
+          }
+        }
+      ],
+      "title": "NOSSOS CLIENTES RECOMENDAM A TRÓIA HAIR",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur. Enim est porttitor gravida dolor id. Id ipsum semper euismod euismod. Risus parturient non tempus eget libero ullamcorper ultricies tellus. Accumsan turpis tempor nunc tellus ut"
     },
     {
       "__resolveType": "Preview /sections/Footer.tsx"
