@@ -1,3 +1,13 @@
 {
-  "__resolveType": "site/sections/bannerBig.tsx"
+  "__resolveType": "site/sections/bannerBig.tsx",
+  "bannerList": [
+    {
+      "href": "https://sites-troia-hair--staging.decocdn.com/",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/8e35b69f-3ff3-4bf9-868d-b5109404cc37"
+    },
+    {
+      "href": "https://sites-troia-hair--staging.decocdn.com/",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/70ae12a1-9df4-4f92-878e-25fede79753d"
+    }
+  ]
 }

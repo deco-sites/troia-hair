@@ -1,3 +1,21 @@
 {
-  "__resolveType": "site/sections/bannersSmall.tsx"
+  "__resolveType": "site/sections/bannersSmall.tsx",
+  "bannerList": [
+    {
+      "href": "https://sites-troia-hair--staging.decocdn.com/",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/aadc981d-d695-4a28-b0ac-a404cfc0cd5f"
+    },
+    {
+      "href": "https://sites-troia-hair--staging.decocdn.com/",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/9025bb61-33d3-41f1-8e3b-317b43efd976"
+    },
+    {
+      "href": "https://sites-troia-hair--staging.decocdn.com/",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/0fcf1d1a-ba39-40e8-acdd-3535ed8a8176"
+    },
+    {
+      "href": "https://sites-troia-hair--staging.decocdn.com/",
+      "banner": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/6a29fc4a-f49f-4e6b-bab0-0a3134733813"
+    }
+  ]
 }

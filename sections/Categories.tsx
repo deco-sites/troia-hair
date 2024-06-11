@@ -13,7 +13,7 @@ interface Props {
 
 export default function Section({ title="nossas categorias", categorie}: Props) {
   return (
-    <div class="flex flex-col items-center w-[1300px] justify-center mx-auto">
+    <div class="flex flex-col items-center w-[1300px] justify-center mx-auto pb-16">
       <h2 class="text-2xl text-primary text-center font-bold uppercase py-20">
         {title}
       </h2>
