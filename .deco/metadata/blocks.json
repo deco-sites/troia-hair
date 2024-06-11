@@ -112,5 +112,17 @@
   "/.deco/blocks/Preview%20%2Fsections%2FCategories.tsx.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Categories.tsx"
+  },
+  "/.deco/blocks/Preview%20site%2Fsections%2FBlogPosts.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/BlogPosts.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FbannersSmall.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/bannersSmall.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FbannerBig.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/bannerBig.tsx"
   }
 }
