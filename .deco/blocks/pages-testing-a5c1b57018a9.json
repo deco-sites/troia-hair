@@ -42,11 +42,14 @@
       "__resolveType": "Preview /sections/bannersSmall.tsx"
     },
     {
-      "__resolveType": "site/sections/ImageWithParagraph.tsx",
-      "placement": "right"
+      "__resolveType": "Preview /sections/Products.tsx"
     },
     {
       "__resolveType": "Preview /sections/bannerBig.tsx"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "placement": "right"
     },
     {
       "__resolveType": "site/sections/Categories.tsx",
