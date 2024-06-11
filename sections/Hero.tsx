@@ -20,9 +20,9 @@ export default function HeroFlats({
   
 }: Props) {
   return (
-    <nav class="lg:container lg:mx-auto ">
+    <nav class=" mx-auto w-[1300px]">
       <div class="flex flex-col items-center">
-        <div class="flex w-full xl:container  pt-2  z-10 flex-col  justify-center text-center  items-center">
+        <div class="flex w-full   pt-2  z-10 flex-col  justify-center text-center  items-center">
           {image && (
             <Image
               width={1300}

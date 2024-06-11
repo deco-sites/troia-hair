@@ -7,24 +7,34 @@ export interface Item {
 }
 
 interface Props {
+  title?: string;
   categorie?: Item[];
 }
 
-export default function Section({ categorie}: Props) {
+export default function Section({ title="nossas categorias", categorie}: Props) {
   return (
-    <div class="flex justify-between">
-      {categorie?.map((item) => (
-        <div>
-          <Image
-            class="object-cover rounded-full bg-primary border border-primary"
-            src={item.imgHref || ""}
-            width={83}
-            height={83}
-            alt={item.title}
-          />
-          <p>{item.title}</p>
-        </div>
-      ))}
+    <div class="flex flex-col items-center w-[1300px] justify-center mx-auto">
+      <h2 class="text-2xl text-primary text-center font-bold uppercase py-20">
+        {title}
+      </h2>
+      <div class="flex justify-between w-full px-8">
+        {categorie?.map((item) => (
+          <div>
+            <div class="flex items-center justify-center w-[115px] h-[115px] rounded-full border border-primary">
+              <Image
+                class="object-cover"
+                src={item.imgHref || ""}
+                width={83}
+                height={83}
+                alt={item.title}
+              />
+            </div>
+            <p class="text-[10px] text-primary text-center font-bold pt-2">
+              {item.title}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -176,10 +176,10 @@ export default function Footer({
                   Inscrever
                 </button>
               </div>
-              <p
-                class="text-3xl"
+              <div
+                class="text-[8px]"
                 dangerouslySetInnerHTML={{ __html: subscribe.instructions }}
-              ></p>
+              ></div>
             </form>
           </div>
         </div>
