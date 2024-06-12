@@ -151,18 +151,22 @@ export default function Footer({
   return (
     <div class="font-poppins lg:max-w-none bg-neutral mx-auto md:max-w-6xl px-4 pt-16 text-sm flex justify-center">
       <div class="w-[1153px] flex flex-col gap-10">
-        <div class="flex flex-col gap-6 justify-between lg:flex-row text-secondary-content border-b border-white-100">
-          <div>
+        <div class="flex flex-col gap-6 justify-between lg:flex-row text-secondary-content border-b border-white-100 ">
+          <div class="mb-6">
             <h3 class="font-poppins text-[22px] font-normal tracking-wide">
               {title}
             </h3>
             <p class="font-poppins text-xs font-normal pt-3">{subtitle}</p>
           </div>
           <div class="">
-            <h4 class="font-poppins font-semibold mb-4">{subscribe?.title}</h4>
+            {subscribe?.title && (
+              <h4 class="font-poppins font-semibold mb-4">
+                {subscribe?.title}
+              </h4>
+            )}
             <form class="flex flex-col">
               <p class="font-poppins font-normal">{subscribe.description}</p>
-              <div class="flex gap-1 mb-4">
+              <div class="flex gap-1 mb-2">
                 <input
                   type="text"
                   placeholder="Digite seu email"
