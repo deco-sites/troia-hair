@@ -22,7 +22,6 @@ export interface Product {
 export interface Props {
   title: string;
   subtitle: string;
-  favorite: string;
   whatsapp: string;
   slides: Product[];
   /**
