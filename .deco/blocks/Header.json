@@ -1,1 +1,47 @@
-{"__resolveType":"site/sections/Header.tsx","navigation":{"links":[],"buttons":[]}}
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "navigation": {
+    "links": [
+      {
+        "label": "Progressivas e Btx",
+        "url": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "label": "Hidratação",
+        "url": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "label": "Todos os Produtos",
+        "url": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "label": "Shampoos",
+        "url": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "label": "Kits até R$99,00",
+        "url": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "label": "+ Categorias",
+        "url": "https://sites-troia-hair--staging.decocdn.com/"
+      },
+      {
+        "label": "Nossas Marcas",
+        "url": "https://sites-troia-hair--staging.decocdn.com/"
+      }
+    ],
+    "buttons": [
+      {
+        "text": "teste",
+        "href": "https://sites-troia-hair--staging.decocdn.com/",
+        "outline": true,
+        "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/42e42ba9-9d4b-41e7-88fd-1f9472b23575"
+      }
+    ]
+  },
+  "logo": {
+    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/160dd22a-c4b6-4826-86af-9a96537715e0",
+    "alt": "troia hair logo"
+  }
+}

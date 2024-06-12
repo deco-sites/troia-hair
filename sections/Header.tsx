@@ -6,7 +6,7 @@ export interface CTA {
   id?: string;
   href: string;
   text: string;
-  outline?: boolean;
+  icon: ImageWidget;
 }
 
 export interface Nav {
@@ -36,31 +36,29 @@ export default function Header({
       { label: "Contact", url: "/" },
     ],
     buttons: [
-      { id: "change-me-1", href: "/", text: "Change me", outline: false },
-      { id: "change-me-2", href: "/", text: "Change me", outline: true },
+      { id: "change-me-1", href: "/", text: "Change me", icon:"" },
+      { id: "change-me-2", href: "/", text: "Change me",icon: "" },
     ],
   },
 }: Nav) {
   return (
-    <nav class="drawer drawer-end">
+    <nav class="drawer drawer-end  w-[1300px] mx-auto">
       <input id="mobile-drawer-nav" type="checkbox" class="drawer-toggle" />
 
       {/* main content */}
-      <div class="drawer-content container lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
+      <div class="drawer-content lg:px-0 px-4 flex gap-8 items-center justify-between py-4">
         <a href="/">
           <Image src={logo.src || ""} width={137} height={58} alt={logo.alt} />
         </a>
 
-
-
-        <div class="hidden items-center justify-between lg:flex w-full">
-          <ul class="flex">
+        <div class="hidden items-center justify-between lg:flex ">
+          <ul class="flex gap-[54px] ">
             {navigation.links.map((link) => (
               <li>
                 <a
                   href={link.url}
                   aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
+                  class="link no-underline hover:underline text-[10px] text-primary"
                 >
                   {link.label}
                 </a>
@@ -74,11 +72,9 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
-                  item.outline && "btn-outline"
-                }`}
+                class="font-normal btn btn-primary"
               >
-                {item?.text}
+                <Image src={item.icon || ""} width={58} height={58} alt={item.text} />
               </a>
             ))}
           </ul>
@@ -128,9 +124,9 @@ export default function Header({
                 id={item?.id}
                 href={item?.href ?? "#"}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
-                  item.outline && "btn-outline"
-                }`}
+                // class={`font-normal btn btn-primary ${
+                //   item.outline && "btn-outline"
+                // }`}
               >
                 {item?.text}
               </a>
