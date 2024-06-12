@@ -43,8 +43,7 @@ export interface Props {
 
 const DEFAULT_PROPS = {
   title: "BESTSELLERS DO BRASIL",
-  subtitle:
-    "Os mais procurados pelos nossos clientes",
+  subtitle: "Os mais procurados pelos nossos clientes",
   slides: [
     {
       content: {
@@ -108,27 +107,73 @@ function SliderItem({ slide, id }: { slide: Product; id: string }) {
   const { content } = slide;
 
   return (
-    <div id={id} class="relative overflow-y-hidden w-full">
-      <div class="flex flex-col justify-center gap-16 p-8 h-[167] w-[314px]">
-        <div class="flex flex-col items-center gap-5">
+    <div
+      id={id}
+      class="relative overflow-y-hidden w-full flex flex-col items-center"
+    >
+      <div class="flex flex-col h-[266px] w-[167px] border-[0.18px] border-primary rounded-[7px] px-2 pt-[5px]">
+        <div class="flex justify-between w-full pb-3">
           <Image
-            class="object-cover"
-            alt={content?.alt}
-            src={content?.productImage || ""}
-            width={143}
-            height={129}
+            alt="icone de coração"
+            src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/a7e41c85-ae36-4885-8a3e-8084afa71c68"
+            width={18}
+            height={16}
           />
-          <div class="flex flex-col">
-            <p class="text-xs w-[327px] text-primary text-center pt-6">
+
+          <Image
+            alt="icone de whatsapp"
+            src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/53b0d5db-8082-4f1d-a526-9b3e6221aff9"
+            width={14}
+            height={13}
+          />
+        </div>
+        <div class="flex flex-col items-center">
+          <div class=" w-[143px] h-[143px] pb-[17px]">
+            <Image
+              class="object-contain"
+              alt={content?.alt}
+              src={content?.productImage || ""}
+              width={143}
+              height={129}
+            />
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="font-bold text-[7px] w-[157px] text-primary text-center pb-[6px]">
               {content?.description}
             </p>
-            <p class="font-semibold  w-[327px] text-primary text-center text-base">
-              {content?.price}
+            <p class="font-bold  w-[327px] text-primary text-center text-[17px] pb-[13px]">
+              {`R$ ${content?.price}`}
             </p>
-            <a href="/">comprar</a>
-            <a href="/">ver produto</a>
+            <div class="flex gap-2">
+              <a
+                class="font-normal uppercase btn btn-accent p-0 w-[75px] h-[18px] text-[8.5px] text-primary rounded-md min-h-0"
+                href="/"
+              >
+                comprar
+              </a>
+              <a
+                class="font-normal uppercase btn btn-accent p-0 w-[75px] h-[18px] text-[8.5px] text-primary placeholder-primary rounded-md min-h-0"
+                href="/"
+              >
+                ver produto
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+      <p class="text-[7px] text-primary w-[134px] text-center pt-[9px]">
+        {content?.textPrice}
+      </p>
+      <div class="flex gap-[11px] pt-[6px]">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Image
+            key={index}
+            alt="icone de estrela para avaliar o produto"
+            src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/4991c5d9-1b97-41c5-aadf-544e1984e90e"
+            width={13}
+            height={13}
+          />
+        ))}
       </div>
     </div>
   );
@@ -198,15 +243,15 @@ function Carousel(props: Props) {
   const { title, subtitle, slides, interval } = { ...DEFAULT_PROPS, ...props };
 
   return (
-    <div class="w-screen border-t-2 border-primary">
+    <div class="w-screen">
       <div
         id={id}
-        class="min-h-min flex flex-col  lg:container md:max-w-6xl lg:mx-auto mx-4 py-4 lg:py-12 b"
+        class="min-h-min flex flex-col justify-center items-center lg:container md:max-w-6xl lg:mx-auto mx-4 py-4 lg:py-12 b"
       >
-        <h2 class="text-2xl text-primary font-bold pb-5">{title}</h2>
+        <h2 class="text-2xl text-primary font-bold pb-2">{title}</h2>
         <p class="text-base text-primary">{subtitle}</p>
         <Slider
-          class="carousel carousel-center w-full col-span-full row-span-full gap-20 pt-10"
+          class="carousel carousel-center w-[1043px] col-span-full row-span-full gap-[52px] pt-[92px]"
           rootId={id}
           interval={interval && interval * 1e3}
           infinite
@@ -218,10 +263,10 @@ function Carousel(props: Props) {
           ))}
         </Slider>
 
-        {/* <div class="flex justify-between pt-8 lg:px-16">
+        <div class="flex justify-between pt-8 lg:px-16 ">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
         {props.arrows && <Buttons />}
-      </div> */}
+      </div>
       </div>
     </div>
   );

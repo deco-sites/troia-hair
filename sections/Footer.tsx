@@ -174,7 +174,7 @@ export default function Footer({
                 />
                 <button
                   type="submit"
-                  class="font-poppins font-normal btn btn-accent w-[92px] h-6 text-custom-s9 text-primary placeholder-primary rounded-md min-h-0 font-normal"
+                  class="font-poppins font-normal btn btn-accent w-[92px] h-6 text-custom-s9 text-primary placeholder-primary rounded-md min-h-0"
                   aria-label="Subscribe"
                 >
                   Inscrever
