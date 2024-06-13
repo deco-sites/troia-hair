@@ -82,7 +82,83 @@
       "title": "Nossas marcas"
     },
     {
-      "__resolveType": "Preview /sections/Products.tsx"
+      "__resolveType": "site/sections/Products.tsx",
+      "slides": [
+        {
+          "content": {
+            "description": "Lorem ipsum dolor sit amet consectetur.",
+            "productImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/3aad4a8b-94b6-4dc7-8a61-a06953e43f9b",
+            "alt": "organic",
+            "price": "0,00",
+            "textPrice": "R$ 0,00 à vista com desconto ou 10x de R$ 00,00 sem juros"
+          }
+        },
+        {
+          "content": {
+            "description": "Lorem ipsum dolor sit amet consectetur.",
+            "alt": "nome do produto",
+            "price": "00,00",
+            "textPrice": "R$ 0,00 à vista com desconto ou 10x de R$ 00,00 sem juros",
+            "desconto": "40%",
+            "productImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/463b7f54-2992-40ef-8262-96f232988760"
+          }
+        },
+        {
+          "content": {
+            "textPrice": "R$ 0,00 à vista com desconto ou 10x de R$ 00,00 sem juros",
+            "desconto": "40%",
+            "price": "00,00",
+            "alt": "nome do produto",
+            "description": "Lorem ipsum dolor sit amet consectetur.",
+            "productImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/10bf40fb-8725-42a3-99d2-13ce998ed562"
+          }
+        },
+        {
+          "content": {
+            "textPrice": "R$ 0,00 à vista com desconto ou 10x de R$ 00,00 sem juros",
+            "desconto": "40%",
+            "price": "00,00",
+            "alt": "nome do produto",
+            "description": "Lorem ipsum dolor sit amet consectetur.",
+            "productImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/463b7f54-2992-40ef-8262-96f232988760"
+          }
+        },
+        {
+          "content": {
+            "description": "Lorem ipsum dolor sit amet consectetur.",
+            "alt": "nome do produto",
+            "price": "00,00",
+            "textPrice": "R$ 0,00 à vista com desconto ou 10x de R$ 00,00 sem juros",
+            "desconto": "40%",
+            "productImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/fa04abc0-f1bb-4f30-b5c1-1f7c34e319f3"
+          }
+        },
+        {
+          "content": {
+            "description": "Lorem ipsum dolor sit amet consectetur.",
+            "alt": "nome do produto",
+            "price": "00,00",
+            "textPrice": "R$ 0,00 à vista com desconto ou 10x de R$ 00,00 sem juros",
+            "desconto": "40%",
+            "productImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/10bf40fb-8725-42a3-99d2-13ce998ed562"
+          }
+        },
+        {
+          "content": {
+            "description": "Lorem ipsum dolor sit amet consectetur.",
+            "alt": "nome do produto",
+            "price": "00,00",
+            "textPrice": "R$ 0,00 à vista com desconto ou 10x de R$ 00,00 sem juros",
+            "desconto": "40%",
+            "productImage": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/fa04abc0-f1bb-4f30-b5c1-1f7c34e319f3"
+          }
+        }
+      ],
+      "title": "BESTSELLERS DO BRASIL!",
+      "subtitle": "Os mais procurados pelos nossos clientes",
+      "favorite": "coracao",
+      "whatsapp": "354556656666",
+      "arrows": true
     },
     {
       "__resolveType": "Preview /sections/LongBanner.tsx"
@@ -133,7 +209,7 @@
       "subtitle": "Lorem ipsum dolor sit amet consectetur. Enim est porttitor gravida dolor id. Id ipsum semper euismod euismod. Risus parturient non tempus eget libero ullamcorper ultricies tellus. Accumsan turpis tempor nunc tellus ut"
     },
     {
-      "__resolveType": "Preview /sections/Footer.tsx"
+      "__resolveType": "Footer"
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

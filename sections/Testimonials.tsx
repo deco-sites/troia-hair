@@ -220,10 +220,10 @@ function Carousel(props: Props) {
           ))}
         </Slider>
 
-        {/* <div class="flex justify-between pt-8 lg:px-16">
+        <div class="flex justify-between pt-8 lg:px-16">
         {props.dots && <Dots slides={slides} interval={interval} />}{" "}
         {props.arrows && <Buttons />}
-      </div> */}
+      </div>
       </div>
     </div>
   );

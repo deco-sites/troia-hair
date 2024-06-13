@@ -99,7 +99,7 @@
   },
   "/.deco/blocks/Footer.json": {
     "blockType": "sections",
-    "__resolveType": "site/sections/Footer.tsx"
+    "__resolveType": "Preview /sections/Footer.tsx"
   },
   "/.deco/blocks/Preview%20website%2Factions%2Fsecrets%2Fencrypt.ts.json": {
     "blockType": "actions",

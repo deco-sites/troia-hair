@@ -36,9 +36,13 @@
         "text": "teste",
         "href": "https://sites-troia-hair--staging.decocdn.com/",
         "outline": true,
-        "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/42e42ba9-9d4b-41e7-88fd-1f9472b23575"
+        "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/42e42ba9-9d4b-41e7-88fd-1f9472b23575",
+        "label": "Carrinho"
       },
-      {}
+      {
+        "label": "Favoritos",
+        "href": "https://sites-troia-hair--staging.decocdn.com/"
+      }
     ]
   },
   "logo": {

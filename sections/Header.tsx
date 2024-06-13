@@ -3,9 +3,9 @@ import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
 
 export interface CTA {
+  label: string;
   id?: string;
   href: string;
-  text: string;
   icon: ImageWidget;
 }
 
@@ -19,7 +19,6 @@ export interface Nav {
       label?: string;
       url?: string;
     }[];
-    buttons: CTA[];
   };
 }
 
@@ -35,10 +34,7 @@ export default function Header({
       { label: "Princing", url: "/" },
       { label: "Contact", url: "/" },
     ],
-    buttons: [
-      { id: "change-me-1", href: "/", text: "Change me", icon:"" },
-      { id: "change-me-2", href: "/", text: "Change me",icon: "" },
-    ],
+   
   },
 }: Nav) {
   return (
@@ -65,19 +61,44 @@ export default function Header({
               </li>
             ))}
           </ul>
-          <ul class="flex gap-3">
-            {navigation.buttons?.map((item) => (
-              <a
-                key={item?.id}
-                id={item?.id}
-                href={item?.href ?? "#"}
-                target={item?.href.includes("http") ? "_blank" : "_self"}
-                class="font-normal btn btn-primary"
-              >
-                <Image src={item.icon || ""} width={58} height={58} alt={item.text} />
-              </a>
-            ))}
-          </ul>
+          <div class="flex gap-3">
+            <a
+              href="/"
+              class=" font-normal btn btn-primary btn-outline border rounded-full p-0 m-0 w-[43px] h-[43px] min-h-0"
+            >
+              <Image
+                class="w-[28px] h-[38px]  p-0 m-0"
+                src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/42e42ba9-9d4b-41e7-88fd-1f9472b23575"
+                width={28}
+                height={38}
+                alt="icone do carrinho de compras"
+              />
+            </a>
+            <a
+              href="/"
+              class=" font-normal btn btn-primary btn-outline border rounded-full p-0 m-0 w-[43px] h-[43px]  min-h-0"
+            >
+              <Image
+                class="w-[28px] h-[38px] hover:fill-primary"
+                src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/1a1a3c39-17f3-4687-84ae-de810f201285"
+                width={28}
+                height={38}
+                alt="icone do carrinho de compras"
+              />
+            </a>
+            <a
+              href="/"
+              class=" font-normal btn btn-primary btn-outline border rounded-full p-0 m-0 w-[43px] h-[43px]  min-h-0"
+            >
+              <Image
+                class="w-[28px] h-[38px] hover:fill-primary"
+                src="https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10652/4b00e9f1-1cc7-4f6d-b12f-18ec0c8952af"
+                width={28}
+                height={38}
+                alt="icone do carrinho de compras"
+              />
+            </a>
+          </div>
         </div>
 
         <label
@@ -117,7 +138,7 @@ export default function Header({
             ))}
           </ul>
 
-          <ul class="p-4 flex items-center gap-3">
+          {/* <ul class="p-4 flex items-center gap-3">
             {navigation.buttons?.map((item) => (
               <a
                 key={item?.id}
@@ -131,7 +152,7 @@ export default function Header({
                 {item?.text}
               </a>
             ))}
-          </ul>
+          </ul> */}
         </div>
       </aside>
     </nav>
